@@ -1,11 +1,7 @@
-import '@babel/polyfill'
-import 'mutationobserver-shim'
 import PortalVue from "portal-vue";
 import { createApp } from "vue";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 import Vue from "vue";
-import './plugins/bootstrap-vue'
-import './plugins/bootstrap-vue'
 import App from "./App.vue";
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)

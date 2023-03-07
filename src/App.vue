@@ -7,14 +7,14 @@
 </template>
 
 <script>
-import products from '@/data/favorites';
+import favorites from '@/data/favorites';
 import Sidebar from '@/components/Sidebar.vue';
 import MainPage from '@/components/MainPage';
 
 export default {
   data() {
-    console.log(products);
-    return products;
+    console.log(favorites);
+    return favorites;
   },
   name: 'App',
   components: {
@@ -25,15 +25,6 @@ export default {
 </script>
 
 <style lang="scss">
-// #app {
-//   font-family: Avenir, Helvetica, Arial, sans-serif;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
-//   margin-top: 60px;
-// }
-
 * {
   margin: 0;
   padding: 0;

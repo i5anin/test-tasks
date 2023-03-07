@@ -2,7 +2,7 @@
   <aside>
     <div class="sidenav">
       <a>Discord</a>
-      <ul class="favorites">
+      <ul>
         <li v-for="item in favorites" :key="item.name">
           <img :src="item.imgUrl" alt="" /> {{ item.name }}
         </li>
@@ -12,7 +12,11 @@
 </template>
 
 <script>
+// import favorites from '@/data/favorites.js';
 export default {
+  data() {
+    console.log(favorites);
+  },
   props: ['favorites'],
 };
 </script>

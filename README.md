@@ -1,24 +1,10 @@
-# app
+# [Задание](./doc/Exercise.md)
 
-## Project setup
-```
-npm install
-```
+Используется
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+1. [Vue.js](https://vuejs.org/guide/introduction.html)
+1. [Bootstrap-Vue](https://bootstrap-vue.org/docs)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Возможно будет использоваться:
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. [TailwindCSS](https://tailwindcss.com/docs/installation)

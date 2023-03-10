@@ -7,15 +7,16 @@
 </template>
 
 <script>
-import favorites from '@/data/favorites';
+// import favorites from '@/data/favorites';
 import Sidebar from '@/components/Sidebar.vue';
 import MainPage from '@/components/MainPage';
 
 export default {
-  data() {
-    console.log(favorites);
-    return favorites;
-  },
+  // data() {
+  //   // console.log('app', typeof favorites);
+  //   // console.log(favorites);
+  //   // return favorites;
+  // },
   name: 'App',
   components: {
     MainPage,

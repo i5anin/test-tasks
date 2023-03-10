@@ -3,21 +3,37 @@
     <div class="sidenav">
       <a>Discord</a>
       <ul>
-        <li v-for="item in favorites" :key="item.name">
-          <img :src="item.imgUrl" alt="" /> {{ item.name }}
+        <li v-for="favorite in favorites" :key="favorite.id">
+          <b-img class="round" :src="favorite.imgUrl" alt="" />
+        </li>
+        <li v-for="item in used" :key="item.id">
+          <b-img class="rounded-corners" :src="item.imgUrl" alt="" />
         </li>
       </ul>
     </div>
   </aside>
 </template>
 
+<style>
+.round {
+  border-radius: 100px; /* Радиус скругления */
+}
+
+.rounded-corners {
+  border-radius: 15px; /* Радиус скругления */
+}
+</style>
+
 <script>
-// import favorites from '@/data/favorites.js';
+import favorites from '@/data/favorites.json';
+import used from '@/data/used.json';
 export default {
   data() {
-    console.log(favorites);
+    return {
+      favorites,
+      used,
+    };
   },
-  props: ['favorites'],
 };
 </script>
 
